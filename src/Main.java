@@ -25,12 +25,16 @@ public class Main {
                 maxWeight = a;
             }
         }
-        System.out.println(minWeight + " минимальная зп");
-        System.out.println(maxWeight + " максимальная зп");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length-1; i >= 0; i--){
-            System.out.print(reverseFullName[i]);
+        for (final int b : arr) {
+            if (b < minWeight) {
+                minWeight = b;
+            }
+            }
+            System.out.println(minWeight + " минимальная зп");
+            System.out.println(maxWeight + " максимальная зп");
+            char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+            for (int i = reverseFullName.length - 1; i >= 0; i--) {
+                System.out.print(reverseFullName[i]);
         }
-
     }
 }
